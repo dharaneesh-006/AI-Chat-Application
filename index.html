@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Chat with Gemini</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 🔐 LOGIN PAGE -->
+  <div id="login-page" class="center-screen">
+    <h1>Welcome to Gemini AI Chat</h1>
+    <button id="login-btn">Sign in with Google</button>
+  </div>
+
+  <!-- 💬 CHAT PAGE (initially hidden) -->
+  <div id="chat-page" class="hidden">
+    <header>
+      <h2>Wednesday Chat</h2>
+      <button id="logout-btn">Logout</button>
+    </header>
+    <div id="chat-box" class="chat-box"></div>
+    <form id="chat-form" class="chat-form">
+      <input type="text" id="user-input" placeholder="Type your message..." required />
+      <button type="submit">➤</button>
+      <button type="button" id="mic-btn">🎙️</button>
+    </form>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
